@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 const databaseUrl = "workoutdb";
-const collections = ["workout"];
+const collections = ["workout", "exercises"];
 
 const db = mongojs(databaseUrl, collections);
 
